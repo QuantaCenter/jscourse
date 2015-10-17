@@ -1,0 +1,191 @@
+.header{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header-button{
+    height: 60px;
+    background-color: rgba(131,16,56,0.95);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+    width: 100%;
+}
+.face-list{
+    height: 118px;
+    background-color: rgba(255,255,255,0.1);
+    padding-top: 6px;
+    min-width: 316px;
+    position: absolute;
+    top: 60px;
+    display: none;
+    overflow: hidden;
+}
+.face-list-button{
+    width: 100%;
+    margin: 0 auto;
+}
+.face-list-center{
+    left: 50%;
+    margin-left: -237px;
+}
+.face-list-auth{
+    left: -114px;
+}
+.face-list-button>a{
+    width: 154px;
+    margin: 0 2px;
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+.face-list-button .sub-nav{
+    background-color: rgba(255,255,255,0.5);
+    color: #84113a;
+}
+.face-list-button .sub-nav:hover{
+    font-weight: bolder;
+}
+.face-list-button>a>div{
+    border-top: dashed 1px #84113a;
+    font-size: 13px;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+}
+.face-list-button>a>img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+    .header-button{
+        background-color: #84113a;
+        filter:Alpha(opacity=95);
+        position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+    .face-list-button .sub-nav{
+        background-color: #ffffff;
+        filter:Alpha(opacity=50);
+        position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+    .header-button a,.face-list a{
+        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+}
+.header-content{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+.bg-center{
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+.bg-center:hover{
+    background-color: #ac164b;
+}
+.navSelected{
+    background-color: #ac164b;
+}
+/*导航栏*/
+.logo{
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-indent: -9999px;
+    background-image: url("../img/header/logo.png");
+    width: 162px;
+    height: 100%;
+    overflow: hidden;
+}
+.homeBT{
+    background-image: url("../img/header/home.png");
+    width: 84px;
+    height: 100%;
+    overflow: hidden;
+}
+.whyBT{
+    background-image: url("../img/header/why.png");
+    width: 117px;
+    height: 100%;
+    overflow: hidden;
+}
+.faceBT{
+    background-image: url("../img/header/face.png");
+    width: 99px;
+    height: 100%;
+}
+.skincareBT{
+    background-image: url("../img/header/skincare.png");
+    width: 97px;
+    height: 100%;
+}
+.communityBT{
+    background-image: url("../img/header/community.png");
+    width: 98px;
+    height: 100%;
+    overflow: hidden;
+}
+.authBT{
+    background-image: url("../img/header/auth.png");
+    width: 99px;
+    height: 100%;
+    position: relative;
+}
+.joinBT{
+    background-image: url("../img/header/join.png");
+    width: 123px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*搜索框*/
+.search-box{
+    width: 122px;
+    height: 16px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: white;
+    float: right;
+    margin-right: 18px;
+    margin-top: 23px;
+    overflow: hidden;
+    position: relative;
+}
+.search-box input[type=text]{
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    height: 16px;
+    position: absolute;
+    left: 7px;
+    top: 0;
+    font-size: 10px;
+    outline: none;
+    color: #898989;
+}
+.search-box input[type=submit]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 16px;
+    width: 15px;
+    background-color: transparent;
+    background-image: url("../img/header/search.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+}

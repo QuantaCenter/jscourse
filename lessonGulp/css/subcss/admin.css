@@ -1,0 +1,48 @@
+*{
+    font-family: 宋体;
+}
+.add-imagesSubmit{
+    margin-right: 100px;
+}
+.add-submit{
+    text-align: center;
+}
+.left{
+    float: left;
+}
+.icon-people{
+    position: relative;
+    margin-bottom: 12px;
+}
+.icon-people img{
+    position: relative;
+    left: -10px;
+}
+.right{
+    float: right;
+}
+.red{
+    color: #ff0000;
+}
+#jobSet{
+    display: none;
+}
+.sub .sub li{
+    background-color: black;
+}
+.sub .sub .this{
+    border-left: 10px solid #0480be;
+}
+.sub #current>strong{
+    background-color: #84113a;
+    color: #ffffff;
+}
+.tipscon{
+    float: right;
+    position: absolute;
+    left: 110px;
+    top: 3px;
+}
+input[type='file']{
+    border: solid 1px #898989;
+}

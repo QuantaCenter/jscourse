@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: blue;
+  top: 0;
+}
+.footer {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  background-color: blue;
+  bottom: 0;
+}

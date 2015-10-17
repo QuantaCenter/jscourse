@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.clear:after{content: ".";display: block;height: 0px;clear: both;visibility: hidden;}
+* html .clear{height: 1%;}/*hack IE6*/
+*:first-child+html .clear{min-height: 1px;}/*hack IE7*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,img,table{margin:0;padding:0;}
+input { border: 0px;}
+img { border:0;}
+ol,ul{ list-style:none;}
+a { text-decoration: none; font-family: "微软雅黑"}
+body{
+    font-family: "微软雅黑",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}

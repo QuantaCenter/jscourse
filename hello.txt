@@ -1,7 +1,0 @@
-hello world!!
-hello world!!2
-<<<<<<< HEAD
-hello world!!3
-=======
-hello world!!4
->>>>>>> testing

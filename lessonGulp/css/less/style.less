@@ -1,0 +1,17 @@
+@maincolor: blue;
+.conf(@height: 80px){
+  width: 100%;
+  height: @height;
+  position: fixed;
+  background-color: @maincolor;
+}
+.header{
+  .conf(80px);
+  top: 0;
+}
+.mainBody{
+}
+.footer{
+  .conf(30px);
+  bottom: 0;
+}
