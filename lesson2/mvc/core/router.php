@@ -15,13 +15,13 @@ class router
         $url=explode("/",$info);
         @$controller=$url[1]==''?"Index":$url[1];
         @$action=$url[2]?$url[2]:"index";
-        define('__CONTROLLER__',$controller);
-        define('__ACTION__',$action);
+        define('CONTROLLER',$controller);
+        define('ACTION',$action);
         static::load();
     }
     static public function load(){
-        $conName='app\controllers\\'.__CONTROLLER__."Controller";
+        $conName='app\controllers\\'.CONTROLLER."Controller";
         $con=new $conName();
-        eval('$con->'.__ACTION__.'();');
+        eval('$con->'.ACTION.'();');
     }
 }

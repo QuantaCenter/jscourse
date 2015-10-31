@@ -20,7 +20,16 @@ class countModel extends model
     }
     function getAll(){
         $sql="select * from user";
-        $re=$this->db->query($sql);
-        return $this->result($re);
+        $this->query($sql);
+        return $this->result();
+    }
+    function login($arr){
+        $sql="select * from user where username='{$arr['username']}' and password='{$arr['password']}'";
+        $this->query($sql);
+        echo $this->getLastSql();
+        return $this->result();
+    }
+    function testSelect($arr){
+        $this->select('select * form user where username= ? and password ?',$arr);
     }
 }

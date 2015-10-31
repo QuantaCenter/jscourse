@@ -8,7 +8,7 @@
 namespace app\conf;
 return array(
     "DB_HOST" => "localhost",
-    "DB_NAME" => "hwxxtj",
+    "DB_NAME" => "mvc",
     'DB_USER'   => 'root',
     'DB_PWD'    => '', // ÃÜÂë
     'DB_PORT'   => 3306, // ¶Ë¿Ú
